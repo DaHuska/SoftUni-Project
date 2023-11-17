@@ -1,0 +1,310 @@
+nav {
+  background-color: #021024;
+}
+
+.search__bar__navigation {
+  margin: 0;
+  padding: 10px;
+}
+
+.search__bar {
+   margin: 0 20%;
+}
+
+input.form-control {
+  background-color: #021024 !important;
+}
+
+input.form-control::placeholder {
+  color: white !important;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-width: 3px;
+  border-image: 
+    linear-gradient(to bottom,#172BE8,#0AE8F8) 1 100%;
+}
+
+.nav-link:hover {
+  background-color: #C1E8FF;
+  color: #021024 !important;
+}
+
+#droppedNavMenu a {
+    font-weight: bold;
+    font-size: large;
+}
+
+#brand a {
+    font-size: large;
+    font-weight: bold;
+}
+
+.icons {
+  margin: 1rem 0;
+  margin-right: 3rem;
+}
+
+.bi {
+  margin: 0 0.5rem;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='aqua' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+border-color: aqua !important;
+box-shadow: none;
+}
+
+/* Modal Dialoges */
+.modal-content {
+  background-color: #021024 !important;
+}
+
+/* Create custom toggler color */
+/* Carousel styles */
+
+.c-item {
+    height: 480px;
+}
+
+.c-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+/* Watches page */
+.aside__container {
+    background-color: #021024;
+}
+
+.offers__container {
+    margin: 0 auto;
+    float: left;
+    max-width: 95%;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-basis: auto;
+}
+
+.card {
+    width: 100%;
+}
+
+/* Brand section */
+.brand__cards {
+  padding: 4rem 0;
+}
+
+.brand__link {
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.brand__link p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.brand__card__cont {
+  background-color: #021024;
+  display: flex;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand__card {
+  margin: 1rem 3rem;
+}
+
+/* Offers Section */
+.dropdown-menu {
+  background-color: #5b8cff !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  color: #5b8cff !important;
+}
+
+/* Login Form */
+#login__form {
+  background-color: #021024;
+  color: white;
+  margin: 1rem 0;
+  padding: 2rem 0;
+}
+
+input#inputEmail, input#inputPassword {
+  background-color: #5b8cff !important;
+  border: none;
+  margin: 1rem 0;
+}
+
+#loginSubmit {
+  margin-top: 1rem;
+  background-color: #5b8cff;
+  color: white;
+}
+
+#loginSubmit:hover {
+  background-color: #C1E8FF;
+  color: #021024;
+}
+
+/* Footer */
+#brandFooter {
+  display: flex;
+  padding: 80px 0;
+  font-weight: 600;
+}
+
+.footer-under{
+  background-color:#021024;
+  padding-bottom:50px;
+  padding-top:50px;
+  height:350px;
+  color: aqua;
+  position:relative;
+  font-weight:100;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.foot-list {
+  float: left;
+  width: 150px;
+}
+
+.foot-list-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 0.5em 0;
+}
+
+.foot-list-item{
+  color:rgba(238, 238, 238, 0.8);
+  font-size: 0.9em;
+  padding:0.5em 0;
+}
+.foot-list-item:hover{
+  color:rgba(238, 238, 238, 1);
+}
+
+.foot-form-cont{
+  width: 300px;
+  float: right;
+}
+
+.foot-form-title{
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.foot-form-desc{
+  font-size: 1em;
+  font-weight: 450;
+  color: #58afdd;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sub-input{
+  width:100%;
+  margin-bottom:15px;
+  padding:7px 10px;
+  border-radius:2px;
+  color:#fff;
+  background-color:#bbdffb;
+  border:none;
+}
+
+.sub-btn{
+  width:100%;
+  margin:15px 0;
+  background-color:#1a8ae5;
+  border:none;
+  color:#fff;
+  border-radius:2px;
+  padding:7px 10px;
+  font-size:1em;
+  cursor:pointer;
+}
+
+.sub-btn:hover{
+  background-color:#91699a;
+}
+
+.sub-btn:active{
+  background-color:#573f5c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+  .footer-under {
+    padding: 0;
+    height: 830px;
+  }
+
+  #brandFooter {
+    padding: 2rem;
+  }
+
+  .foot-form-title {
+    margin-top: 2rem;
+  }
+
+  .brand__link p {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .c-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .search__bar {
+    margin: 0 20px;
+  }
+
+  #brand {
+    display: none;
+  }
+
+  .icons {
+    margin: 1rem 0;
+    margin-right: 0;
+  }
+
+  /* TODO: Fix mobile version for IShit SE */
+}
