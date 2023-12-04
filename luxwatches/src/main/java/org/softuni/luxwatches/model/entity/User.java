@@ -29,4 +29,5 @@ public class User extends BaseEntity {
 
     @OneToMany
     private List<Watch> boughtWatches;
+
 }

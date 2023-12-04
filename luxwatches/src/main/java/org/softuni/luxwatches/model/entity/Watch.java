@@ -20,5 +20,6 @@ public class Watch extends BaseEntity {
 
     @Column
     private Integer count;
+
 }
 
