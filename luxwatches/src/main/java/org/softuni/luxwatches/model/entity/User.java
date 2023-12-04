@@ -1,9 +1,6 @@
 package org.softuni.luxwatches.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.softuni.luxwatches.model.enums.UserRole;
@@ -24,6 +21,7 @@ public class User extends BaseEntity {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private UserRole role;
 

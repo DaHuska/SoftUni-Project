@@ -1,25 +1,11 @@
-package org.softuni.luxwatches.model.entity;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+package org.softuni.luxwatches.model.dto;
 
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "watches")
-public class Watch extends BaseEntity {
-    @Column(nullable = false)
+public class WatchDTO {
     private String brand;
-
-    @Column(nullable = false)
     private String model;
-
-    @Column(nullable = false)
     private BigDecimal price;
-
-    @Column
-    private Integer count;
 
     public String getBrand() {
         return brand;
@@ -44,13 +30,4 @@ public class Watch extends BaseEntity {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
 }
-
