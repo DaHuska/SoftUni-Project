@@ -6,6 +6,14 @@ nav {
   background-color: #020107;
 }
 
+*{
+  font-family: 'Caveat', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Merienda', cursive;
+  margin:0;
+  padding:0;
+}
+
 .search__bar__navigation {
   margin: 0;
   padding: 10px;
@@ -27,14 +35,13 @@ input.form-control::placeholder {
 .nav-item {
   margin: 0 0.5rem;
   font-size: 1.2rem;
-  border-style: solid;
-  border-width: 3px;
-  border-image: linear-gradient(to bottom,#1AA7EC, #4ADEDE) 1 100%;
+  padding: 2px 4px;
 }
 
 .nav-link:hover {
-  background-color: #726EFF;
-  color: #C1E8FF !important;
+  border-bottom: solid 4px #726EFF;
+  color: #726EFF !important;
+  transition: 0.3s;
 }
 
 #droppedNavMenu a {
@@ -48,7 +55,8 @@ input.form-control::placeholder {
 }
 
 .icons {
-  margin: 1rem 2rem 1rem 0;
+  margin: 1rem 0;
+  margin-right: 2rem;
 }
 
 .bi {
@@ -70,10 +78,8 @@ box-shadow: none;
 }
 
 .home__img__container {
-  height: 450px;
-  /*TODO: Image not appearing*/
-  background-image: url('/static/images/home-main-image.png');
-  background-position:center center;
+  height: 550px;
+  background: url("/static/images/home-main-image.png") center center;
   background-size:cover;
 }
 
@@ -97,11 +103,19 @@ box-shadow: none;
 }
 
 /* Modal Dialoges */
+.modal-card {
+  max-width: 540px;
+}
+
 .modal-content {
   background-color: #020107 !important;
 }
 
-/* Create custom toggler color */
+.modal__more__button:hover {
+  color: #726EFF !important;
+  transition: 0.3s;
+}
+
 /* Carousel styles */
 
 #carouselExampleCaptions {
@@ -109,7 +123,12 @@ box-shadow: none;
 }
 
 .c-item {
-  height: 650px;
+  height: 550px;
+}
+
+.c-image {
+  margin: auto;
+  transform: translateY(-15%);
 }
 
 /* Watches page */
@@ -118,16 +137,15 @@ box-shadow: none;
 }
 
 .offers__container {
-  margin: 0 auto;
-  float: left;
-  max-width: 95%;
+  margin: 2rem 1rem;
   flex-wrap: wrap;
-  justify-content: start;
-  flex-basis: auto;
+  display: grid;
+  grid-template-columns: repeat(0, 0fr);
 }
 
 .card {
   border-color: #020107 !important;
+  flex-grow: 0;
   border-width: 2px !important;
   width: 100%;
 }
@@ -142,7 +160,7 @@ box-shadow: none;
 
 #moreBrandsButton {
   padding: 1rem 0;
-  margin: 0 25rem;
+  margin: 2rem 25rem;
 }
 
 #moreBrandsButton p {
@@ -150,17 +168,21 @@ box-shadow: none;
   margin: 0;
 }
 
-#moreBrandsButton:hover, #moreBrandsButton p:hover {
+#moreBrandsButton:hover {
   background-color: #bbdffb;
-  color: #726EFF !important;
   border-color: #726EFF !important;
   transition: 0.8s;
+}
+
+#moreBrandsButton p:hover {
+  color: #726EFF !important;
 }
 
 /* Brand section */
 .brand__cards {
   background-color: #C1E8FF;
-  padding: 4rem 0 0;
+  padding: 4rem 0;
+  padding-bottom: 0;
 }
 
 .brand__link {
@@ -205,7 +227,7 @@ box-shadow: none;
 
 /* Offers Section */
 .dropdown-menu {
-  background-color: #5b8cff !important;
+  background-color: #3DD5F3 !important;
 }
 
 .dropdown-item {
@@ -217,17 +239,17 @@ box-shadow: none;
 }
 
 /* Login Form */
-#loginPageBrandImg {
+#loginPageBrandImg, #registerPageBrandImg {
   position: absolute;
   top: 1.5rem;
 }
 
-#loginBody {
+#loginBody, #registerBody {
   background-image: url(images/login-page-bg-img.png);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
   background-position:center center;
   background-size:cover;
 }
@@ -285,6 +307,7 @@ box-shadow: none;
   width: 100%;
   height: 100%;
   background: transparent;
+  border: none;
   outline: none;
   border: 2px solid #726EFF;
   border-radius: 40px;
@@ -439,7 +462,9 @@ box-shadow: none;
 }
 
 .sub-btn:hover{
-  background-color:#91699a;
+  background-color:#726EFF;
+  color: aqua;
+  transition: 0.3s;
 }
 
 .sub-btn:active{
@@ -559,7 +584,7 @@ box-shadow: none;
   }
 
   .c-item {
-    height: 200px;
+    height: 300px;
   }
 
   .c-image {
